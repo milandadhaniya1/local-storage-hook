@@ -1,0 +1,41 @@
+{
+  "name": "@milandadhaniya/local-storage-hook",
+  "version": "1.0.2",
+  "description": "Typed and logger-integrated localStorage utility",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "dev": "tsup src/index.ts --watch --format esm,cjs --dts"
+  },
+  "keywords": [
+    "localStorage",
+    "typescript",
+    "utility",
+    "logger"
+  ],
+  "author": "Milan Dadhaniya <milan.dadhaniya@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milandadhaniya1/local-storage-hook"
+  },
+  "dependencies": {
+    "@milandadhaniya/tiny-logger-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
